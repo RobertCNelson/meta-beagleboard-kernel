@@ -15,9 +15,9 @@ COMPATIBLE_MACHINE = "ti33x|ti43x|omap-a15|omap3|omap4"
 
 S = "${WORKDIR}/git"
 
-BRANCH = "4.1.3-ti-r7"
+BRANCH = "4.1.4-ti-r9"
 
-SRCREV = "716ec2be1cddbd929bb77368429faddec52209c6"
+SRCREV = "b16e5f7b8a29f130ebcac9311988edbcc944b361"
 PV = "${BRANCH}+git${SRCPV}"
 
 # Append to the MACHINE_KERNEL_PR so that a new SRCREV will cause a rebuild
