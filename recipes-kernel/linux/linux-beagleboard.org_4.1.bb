@@ -15,7 +15,7 @@ COMPATIBLE_MACHINE = "ti33x|ti43x|omap-a15|omap3|omap4"
 
 S = "${WORKDIR}/git"
 
-BRANCH = "4.1.4-ti-r9"
+tag = "4.1.4-ti-r9"
 
 SRCREV = "b16e5f7b8a29f130ebcac9311988edbcc944b361"
 PV = "${BRANCH}+git${SRCPV}"
@@ -27,7 +27,7 @@ PR = "${MACHINE_KERNEL_PR}"
 MULTI_CONFIG_BASE_SUFFIX = ""
 
 KERNEL_GIT_URI = "https://github.com/beagleboard/linux"
-KERNEL_GIT_PROTOCOL = "git"
-SRC_URI += "${KERNEL_GIT_URI};protocol=${KERNEL_GIT_PROTOCOL};branch=${BRANCH} \
+KERNEL_GIT_PROTOCOL = "https"
+SRC_URI += "${KERNEL_GIT_URI};protocol=${KERNEL_GIT_PROTOCOL};tag=${tag} \
             file://defconfig \
            "
