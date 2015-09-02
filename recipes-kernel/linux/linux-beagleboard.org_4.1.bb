@@ -43,7 +43,7 @@ COMPATIBLE_MACHINE = "ti33x|ti43x|omap-a15|omap3|omap4|keystone"
 
 S = "${WORKDIR}/git"
 
-tag = "4.1.4-ti-r9"
+tag = "4.1.6-ti-r13"
 
 PV = "${tag}"
 
@@ -55,6 +55,6 @@ MULTI_CONFIG_BASE_SUFFIX = ""
 
 KERNEL_GIT_URI = "git://github.com/beagleboard/linux.git"
 KERNEL_GIT_PROTOCOL = "git"
-SRC_URI += "${KERNEL_GIT_URI};protocol=${KERNEL_GIT_PROTOCOL};tag=${tag} \
+SRC_URI += "${KERNEL_GIT_URI};protocol=${KERNEL_GIT_PROTOCOL};tag=${tag};nobranch=1 \
             file://defconfig \
            "
